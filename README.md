@@ -1,6 +1,6 @@
 # CBSVB
 A tool for identifying and reconstructing bridge-like complex translocations using both second- and third-generation sequencing data
-![Figure 1](CBSVB.png)
+![Figure 1](images/CBSVB.png)
 
 ## 🧠 Background
 
@@ -10,9 +10,9 @@ Complex chromosomal rearrangements are central to the progression of many diseas
 
 ## ✨ Features
 
-- 🚀 **Both second- and third-generation sequencing data support**: Optimized for PacBio/Nanopore data
-- 🔗 **Graph-based integration**: Connects and merges SV signatures using breakpoint graphs
-- 🧩 **Bridge-like translocation detection**: Identifies and annotates BLT structures automatically
+- **Both second- and third-generation sequencing data support**: Optimized for PacBio/Nanopore data
+- **Graph-based integration**: Connects and merges SV signatures using breakpoint graphs
+- **Bridge-like translocation detection**: Identifies and annotates BLT structures automatically
 
 ---
 
@@ -25,4 +25,12 @@ git clone https://github.com/your-username/CBSVB.git
 cd CBSVB
 conda create --name cbsvb --file requirements.txt
 conda activate cbsvb
+python3 transer.py -o result -b [your bams' path] -seq_type [sequencing data type]
+
+## 🔍 General usage
+| -o | OUTPUT PATH | Absolute path to output       |
+| -b | BAMS PATH | Absolute path to bam files      |
+| -seq_type | SEQ TYPE | The type of sequence, ngs or hifi or ont   |
+
+## 🚀 Run CBSVB
 python3 transer.py -o result -b [your bams' path] -seq_type [sequencing data type]
