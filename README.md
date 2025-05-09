@@ -27,14 +27,15 @@ cd CBSVB
 conda create --name cbsvb --file requirements.txt
 conda activate cbsvb
 python3 transer.py -o result -b [your bams' path] -seq_type [sequencing data type, 'hifi','ont' or 'ngs']
-```bash
+```
 
 ## 🔍 General usage
+
 ```bash
 | -o | OUTPUT PATH | Absolute path to output       |
 | -b | BAMS PATH | Absolute path to bam files      |
 | -seq_type | SEQ TYPE | The type of sequence, ngs or hifi or ont   |
-```bash
+```
 
 ## 🚀 Run CBSVB
 python3 transer.py -o result -b [your bams' path] -seq_type [sequencing data type]
