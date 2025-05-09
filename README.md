@@ -22,4 +22,6 @@ Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/your-username/CBSVB.git
 cd CBSVB
-pip install -r requirements.txt
+conda create --name cbsvb --file requirements.txt
+conda activate cbsvb
+python3 transer.py -o result -b [your bams' path] -seq_type [sequencing data type]
