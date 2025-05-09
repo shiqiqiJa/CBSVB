@@ -1,5 +1,6 @@
 # CBSVB
-A tool for identifying and reconstructing bridge-like complex translocations using both second- and third-generation sequencing data
+A tool designed to identify, reconstruct, and annotate complex structural variations—especially bridge-like translocations—from both second- and third- generation sequencing data. It integrates breakpoint clustering, graph-based modeling, and biological annotation to reveal intricate SV events that are often missed by traditional SV callers. CBSVB is particularly useful in cancer genome studies, where such rearrangements may indicate key pathogenic mechanisms.
+
 ![Figure 1](images/CBSVB.png)
 
 ## 🧠 Background
@@ -25,7 +26,7 @@ git clone https://github.com/your-username/CBSVB.git
 cd CBSVB
 conda create --name cbsvb --file requirements.txt
 conda activate cbsvb
-python3 transer.py -o result -b [your bams' path] -seq_type [sequencing data type]
+python3 transer.py -o result -b [your bams' path] -seq_type [sequencing data type, 'hifi','ont' or 'ngs']
 
 ## 🔍 General usage
 | -o | OUTPUT PATH | Absolute path to output       |
