@@ -10,7 +10,7 @@ import pysam
 # from src.cluster_op import cluster_juncSe_list, cluster_juncSe_multijuncs, cluster_multi_juncs, judge_merge_inner
 from src.cluster_op import cluster_juncSe_list
 from src.reads_op_tgs import traverse_reads_tgs
-from src.reads_op_ngs_init import traverse_reads_ngs
+from src.reads_op_ngs import traverse_reads_ngs
 # from src.reads_op_ngs_unmated import get_juncSe_from_reads
 from src.other_op import get_regions, report_result, get_reliable_juncSe, get_mismatch_ratio_threshold
 from src.bridge_op import get_bridge_candidates
